@@ -1,3 +1,5 @@
+import { SortBy } from "../enums/general";
+
 export interface Log {
   timestamp: string;
   event_name: string;
@@ -14,5 +16,8 @@ export interface AlertLogContextType {
   setSelectedAlertId: React.Dispatch<React.SetStateAction<string>>;
   logs: Log[];
   setLogs: React.Dispatch<React.SetStateAction<Log[]>>;
-  handleAlertChange: (_: any, newValue: string | null) => void;
+  handleAlertChange: (newValue: string | null) => void;
+  filteredLogs: Log[];
+  setFilteredLogs: React.Dispatch<React.SetStateAction<Log[]>>;
+  applyFilters: (filters: { searchQuery?: string; sortBy?: SortBy }) => void;
 }
