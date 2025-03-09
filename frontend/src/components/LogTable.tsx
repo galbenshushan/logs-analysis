@@ -11,7 +11,7 @@ import {
 import { useAlertLog } from "../hooks/useAlertLog";
 
 const StyledTableContainer = styled(TableContainer)`
-  background-color: #081123 !important; /* Slightly lighter than #010a19 */
+  background-color: #081123 !important;
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.05);
 `;
